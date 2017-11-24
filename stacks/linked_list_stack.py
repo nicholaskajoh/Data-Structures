@@ -12,13 +12,15 @@ class Stack:
 
   def pop(self):
     if self.is_empty():
-      print("Stack is empty")
+      print("Stack underflow!")
     else:
       data = self.top_node.data
       self.top_node = self.top_node.next
       return data
 
   def peek(self):
+    if self.is_empty():
+      print("Stack is empty!")
     return self.top_node.data
   
   def is_empty(self):

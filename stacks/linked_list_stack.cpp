@@ -33,7 +33,7 @@ void stack::push(int x) {
 }
 
 int stack::pop() {
-  if(is_empty()) cout << "Stack is empty!" << endl;
+  if(is_empty()) cout << "Stack underflow!" << endl;
   else {
     int data = top_node->data;
     top_node = top_node->next;
@@ -42,7 +42,10 @@ int stack::pop() {
 }
 
 int stack::peek() {
-  if(is_empty()) cout << "Stack is empty!" << endl;
+  if(is_empty()) {
+    cout << "Stack is empty!" << endl;
+    return 0;
+  }
   else return top_node->data;
 }
 
