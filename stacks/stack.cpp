@@ -22,7 +22,8 @@ stack::stack() {
 }
 
 void stack::push(int x) {
-  a[++top] = x;
+  if(top >= MAX) cout << "Stack overflow!" << endl;
+  else a[++top] = x;
 }
 
 int stack::pop() {
