@@ -1,4 +1,4 @@
-class Stack:
+class stack:
   def __init__(self):
     self.stack = []
 
@@ -18,7 +18,7 @@ class Stack:
       return self.stack[-1]
 
 # test
-my_stack = Stack()
+my_stack = stack()
 print(my_stack.is_empty())
 my_stack.push(10)
 my_stack.push(3)
