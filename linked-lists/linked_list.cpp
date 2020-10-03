@@ -26,8 +26,10 @@ int main() {
     v.push_back(linked_list->data); // storing elements in an vector for printing in reverse manner since we cannot traverse in reverse direction in singly linked list. 
     linked_list = linked_list->next;
   }
+  
   //Printing output in reverse order
   for (auto ir = v.rbegin(); ir != v.rend(); ++ir) 
         cout << *ir << " "; 
   return 0;
+  
 }
